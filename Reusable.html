@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reusable UI Library - HTML</title>
+
+  <style>
+    /* ------------------- Reusable Components ------------------- */
+
+    /* Card Component */
+    .card {
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-bottom: 30px;
+    }
+
+    /* Input Component */
+    .input {
+      padding: 10px 12px;
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #aaa;
+      margin-top: 10px;
+    }
+
+    /* Button Component */
+    .btn {
+      padding: 10px 18px;
+      border-radius: 12px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 12px;
+      color: white;
+    }
+
+    /* Custom Colors */
+    .blue { background-color: #2563eb; }
+    .green { background-color: #16a34a; }
+    .yellow { background-color: #ca8a04; }
+
+    .blue-card { background-color: #dbeafe; }
+    .green-card { background-color: #dcfce7; }
+    .yellow-card { background-color: #fef9c3; }
+
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================== PAGE 1: HOME PAGE ======================== -->
+  <section>
+    <h1>Home Page</h1>
+
+    <div class="card blue-card">
+      <h2>Signup Form</h2>
+
+      <input type="text" class="input" placeholder="Enter Name">
+      <input type="email" class="input" placeholder="Enter Email">
+
+      <button class="btn blue">Submit</button>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- ======================== PAGE 2: DASHBOARD ======================== -->
+  <section>
+    <h1>Dashboard</h1>
+
+    <div class="card green-card">
+      <h2>Welcome Back!</h2>
+      <p>Your recent activity is shown below.</p>
+      <button class="btn green">Refresh</button>
+    </div>
+
+    <div class="card yellow-card">
+      <h2>Search</h2>
+      <input type="text" class="input" placeholder="Search here...">
+      <button class="btn yellow">Search</button>
+    </div>
+  </section>
+
+</body>
+</html>
